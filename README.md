@@ -63,6 +63,25 @@ You increase cash (asset) by recording a debit transaction, and increase loan (l
 you increase salary (expenses) by recording a debit transaction, and decrease cash (asset) by recording a credit transaction.
 
 
+Transactions and Journal Entries
+================================
+
+The actual journal entries are written to the `journal` table. There will typically be two entries in this table for
+each transaction you want to enter. For example, if you are entering a charge from your hosting company, you would end up
+with one record increasing the Hosting (Expense) account, and one record decreasing the Bank (Asset) account.
+
+These two records are linked into one "transaction" by referencing the same record in the `transactions` table. This is 
+purely organizational and does not reflect an accounting practice.
+
+This lets us allow for entering "split" transactions that are all linked to a single entity. You may encounter a split transaction
+if you accept payments via PayPal since they charge a transaction fee. For example, if you sold an item for $15 and were 
+charged $0.74 by PayPal, this would be entered as follows:
+
+* Increase the Sales account by $15 (insert a credit of $15 to the Sales account)
+* Increase the Cash account by $14.26 (insert a debit of $14.26 to the Cash account)
+* Increase the Fees account by $0.74 (insert a debit of $0.74 to the Fees account)
+
+
 Further Reading About Double-Entry Accounting
 =============================================
 
