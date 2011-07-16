@@ -1,3 +1,5 @@
+INSERT INTO `settings` VALUES(NULL, 1, 'bookkeeping', 'enabled', 'TRUE');
+
 CREATE TABLE `money_accounts` (
   `account_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
