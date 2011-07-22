@@ -1,3 +1,8 @@
+CREATE TABLE `money_account_types` (
+  `name` varchar(15) DEFAULT NULL,
+  `type` enum('debit','credit') DEFAULT NULL
+);
+
 CREATE TABLE `money_accounts` (
   `account_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
