@@ -1,1 +1,1 @@
-<li><a class="sidebar_icon" href="<?= base_url() ?>home/app-template"><img src="<?= $this_module_assets ?>app-template_24.png"><span>App Template</span></a></li>
+<li><a class="sidebar_icon" href="<?= base_url() ?>home/bookkeeping"><img src="<?= $this_module_assets ?>bookkeeping_24.png"><span>Bookkeeping</span></a></li>

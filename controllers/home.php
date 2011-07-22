@@ -10,10 +10,26 @@ class Home extends Dashboard_Controller
 		$this->data['page_title'] = 'Module Template';
 	}
 	
-	function custom()
+	function transactions()
 	{
-		$this->data['sub_title'] = 'Custom';
+		$this->data['sub_title'] = 'Transactions';
 	
-		$this->render();
+		$this->render('dashboard_wide');
 	}
+
+
+	function journal()
+	{
+		$this->data['sub_title'] = 'Journal';
+	
+		$this->render('dashboard_wide');
+	}
+	
+	function accounts()
+	{
+		$this->data['sub_title'] = 'Accounts';
+	
+		$this->render('dashboard_wide');
+	}	
+
 }

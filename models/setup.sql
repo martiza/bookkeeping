@@ -1,9 +1,12 @@
+INSERT INTO `settings` VALUES(NULL, 1, 'bookkeeping', 'enabled', 'TRUE');
+
 CREATE TABLE `money_account_types` (
   `name` varchar(15) DEFAULT NULL,
   `type` enum('debit','credit') DEFAULT NULL
+  /* add other descriptive columns like friendly name, description */
 );
 
-CREATE TABLE `money_accounts` (
+CREATE TABLE `money_accounts` ( /* use SI categories instead */
   `account_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `account_type` enum('asset','liability','income','expense','equity') NOT NULL,
@@ -12,7 +15,7 @@ CREATE TABLE `money_accounts` (
   KEY `user` (`user_id`)
 );
 
-CREATE TABLE `money_transactions` (
+CREATE TABLE `money_transactions` ( /* use SI activity instead */
   `transaction_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `description` varchar(255) NOT NULL DEFAULT '',
