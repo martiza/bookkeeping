@@ -14,31 +14,43 @@ The accounts are affected in a positive or negative way, depending on their type
 			<th>ACCOUNT TYPE</th>
 			<th>DEBIT</th>
 			<th>CREDIT</th>
+			<th>DEBIT</th>
+			<th>CREDIT</th>
 		</tr>
 		<tr>
 			<td>Asset</td>
 			<td>+</td>
-			<td>−</td>
+			<td>-</td>
+			<td>Deposit</td>
+			<td>Withdrawal</td>
 		</tr>
 		<tr>
 			<td>Liability</td>
-			<td>−</td>
+			<td>-</td>
 			<td>+</td>
+			<td>Decrease</td>
+			<td>Increase</td>
 		</tr>
 		<tr>
 			<td>Income</td>
-			<td>−</td>
+			<td>-</td>
 			<td>+</td>
+			<td>Charge</td>
+			<td>Income</td>
 		</tr>
 		<tr>
 			<td>Expense</td>
 			<td>+</td>
-			<td>−</td>
+			<td>-</td>
+			<td>Expense</td>
+			<td>Rebate</td>
 		</tr>
 		<tr>
 			<td>Equity</td>
-			<td>−</td>
+			<td>-</td>
 			<td>+</td>
+			<td>Decrease</td>
+			<td>Increase</td>
 		</tr>
 	</tbody>
 </table>
