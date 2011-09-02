@@ -1,4 +1,3 @@
-
 Accounts
 ========
 
@@ -12,45 +11,33 @@ The accounts are affected in a positive or negative way, depending on their type
 	<tbody>
 		<tr>
 			<th>ACCOUNT TYPE</th>
-			<th>DEBIT</th>
-			<th>CREDIT</th>
-			<th>DEBIT</th>
-			<th>CREDIT</th>
+			<th colspan="2">DEBIT</th>
+			<th colspan="2">CREDIT</th>
 		</tr>
 		<tr>
 			<td>Asset</td>
-			<td>+</td>
-			<td>-</td>
-			<td>Deposit</td>
-			<td>Withdrawal</td>
+			<td width="20">+</td><td>Deposit</td>
+			<td width="20">-</td><td>Withdrawal</td>
 		</tr>
 		<tr>
 			<td>Liability</td>
-			<td>-</td>
-			<td>+</td>
-			<td>Decrease</td>
-			<td>Increase</td>
+			<td>-</td><td>Decrease</td>
+			<td>+</td><td>Increase</td>
 		</tr>
 		<tr>
 			<td>Income</td>
-			<td>-</td>
-			<td>+</td>
-			<td>Charge</td>
-			<td>Income</td>
+			<td>-</td><td>Charge</td>
+			<td>+</td><td>Income</td>
 		</tr>
 		<tr>
 			<td>Expense</td>
-			<td>+</td>
-			<td>-</td>
-			<td>Expense</td>
-			<td>Rebate</td>
+			<td>+</td><td>Expense</td>
+			<td>-</td><td>Rebate</td>
 		</tr>
 		<tr>
 			<td>Equity</td>
-			<td>-</td>
-			<td>+</td>
-			<td>Decrease</td>
-			<td>Increase</td>
+			<td>-</td><td>Decrease</td>
+			<td>+</td><td>Increase</td>
 		</tr>
 	</tbody>
 </table>
@@ -63,7 +50,7 @@ Examples of Double-Entry Accounting
 you increase rent (expense) by recording a debit transaction, and decrease cash (asset) by recording a credit transaction.
 
 *A business receives cash for a sale:*  
-you increase cash (asset) by recording a debit transaction, and increase sales (revenue) by recording a credit transaction.
+ cyou increase cash (asset) by recording a debit transaction, and increase sales (income) by recording a credit transaction.
 
 *A business buys equipment with cash:*  
 You increase equipment (asset) by recording a debit transaction, and decrease cash (asset) by recording a credit transaction.
